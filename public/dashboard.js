@@ -7,7 +7,7 @@ async function loadDashboard() {
   const container = document.getElementById("dashboard-content");
 
   try {
-    const response = await fetch("/api/dashboard-token");
+    const response = await fetch("https://supply-chain-dashboard-api.onrender.com/api/dashboard-token");
 
     if (!response.ok) {
       throw new Error("Failed to retrieve dashboard token.");

@@ -1,6 +1,9 @@
 import "dotenv/config";
 import express from "express";
+import cors from "cors";
+
 const app = express();
+app.use(cors());
 const PORT = process.env.PORT || 3000;
 
 const CONFIG = {
@@ -116,6 +119,6 @@ app.get("/api/dashboard-token", async (req, res) => {
   }
 });
 
-app.listen(PORT, () => {
+app.listen(PORT, "0.0.0.0", () => {
   console.log(`Server running on port ${PORT}`);
 });
