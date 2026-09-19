@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>Supply Chain Risk Dashboard</title>
+
+  <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+
+  <header>
+    <div>
+      <h1>Supply Chain Risk Dashboard</h1>
+      <p>Supplier risk, lead-time forecasting and stockout exposure</p>
+    </div>
+  </header>
+
+  <main>
+    <div id="loading">
+      Loading dashboard...
+    </div>
+
+    <div id="error" hidden>
+      Unable to load dashboard.
+    </div>
+
+    <div
+      id="dashboard-content"
+      class="dashboard-container"
+    ></div>
+  </main>
+
+  <script type="module" src="/dashboard.js"></script>
+
+</body>
+
+</html>

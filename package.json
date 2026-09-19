@@ -1,0 +1,13 @@
+{
+  "name": "supply-chain-dashboard",
+  "version": "1.0.0",
+  "description": "Externally embedded Databricks supply chain risk dashboard",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "dotenv": "^18.0.1",
+    "express": "^5.1.0"
+  }
+}
